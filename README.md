@@ -33,169 +33,112 @@ o Notify user of overlapping appointments or free time slots.
 o Suggest daily wellness advice (hydration, exercise, screen-time breaks).
 o Adapt suggestions based on past user preferences and responses.
 
-**Explanation:**
 
-This experiment demonstrates how a prompt-based AI application can assist in study time management and concentration enhancement.
-The system interacts naturally with the user, generates personalized study schedules, offers real-time motivation, and adjusts focus intervals according to productivity feedback.
+## Aim:
 
-By using prompt engineering techniques, we can make the AI dynamically organize tasks and adapt to user learning patterns.
+To design and develop a prompt-driven AI application that acts as a personalized productivity assistant capable of managing daily tasks, schedules, and wellness tips using large language model (LLM) capabilities.
 
-**Prompt:**
+## App Name:
 
-Act as a study planner and focus coach for an engineering student. Create personalized study plans, schedule timed focus sessions, suggest short breaks, and give motivational messages. Adjust plans based on progress and user feedback.
+Ticko – Your Productivity Partner
 
-**Procedure:**
+## Objective:
 
-**Step 1: Define Core Requirements**
+To create an interactive AI-based productivity buddy that helps users manage their daily routines, stay organized, and maintain wellness through conversational prompts.
 
-I The Study Planner Assistant should be capable of:
+## Software/Tools Used:
 
-II Creating structured study schedules with subjects and time slots.
+->Loveable AI
 
-III Managing short and long focus sessions (Pomodoro-style).
+## Description:
 
-IV Suggesting rest breaks and productivity tips.
+The developed application, Ticko, is an AI productivity buddy that interacts with users via chat prompts. Users can:
 
-V Motivating users with quotes or progress updates.
+1. Add, update, or delete tasks.
 
-VI Adjusting time allocation based on difficulty or user feedback.
+2. View the day’s tasks and schedule.
 
-<img width="991" height="602" alt="image" src="https://github.com/user-attachments/assets/4dfa8c46-7433-4a9d-aa33-c58eb831f79e" />
+3. Receive priority-based reminders and wellness tips.
 
-**Step 3: Simulate Natural Interaction (Example in Python)**
+4. Interact naturally using simple text prompts.
 
-print("📚 Study Planner Assistant Activated!")
+**The interface displays two main sections:**
 
-while True:
+1. Chat with Ticko Panel: Users can type prompts such as:
 
-    user_input = input("You: ")
-    
-    if "plan" in user_input.lower():
-    
-        print("Assistant: Here’s your study plan for today! Stay consistent.")
-        
-    elif "focus" in user_input.lower():
-    
-        print("Assistant: Starting 25-minute focus session. Keep distractions away!")
-        
-    elif "break" in user_input.lower():
-    
-        print("Assistant: Time to relax! Stretch and hydrate for 5 minutes.")
-        
-    elif "quote" in user_input.lower():
-    
-        print("Assistant: 'Discipline is doing what needs to be done, even when you don’t feel like it.'")
-        
-    elif "exit" in user_input.lower():
-    
-        print("Assistant: Session ended. Great job staying productive! 👏")
-        
-        break
-        
-    else:
-    
-        print("Assistant: Let’s get back on track — what’s your next subject?")
+-> “List my tasks for today.”
 
-**Step 4: Feedback and Adaptation**
+-> “Remind me to study at 4 PM.”
 
-I. The assistant collects user feedback (e.g., “Session felt too long”) and automatically adapts:
+-> “I feel tired.” (to get motivational or wellness tips)
 
-II. Shorter focus sessions for low-energy periods.
+2. Task and Schedule Panels:
 
-III. Longer breaks during fatigue.
+-> Display current tasks with color-coded priority tags (High, Medium).
 
-IV. Increased motivational feedback when user progress declines.
+-> Show today’s schedule with time, category, and duration.
 
-V. It can also track consistency and display weekly study statistics.
+## Algorithm / Workflow:
 
-**Step 5: (Optional) Adaptive Memory Integration**
+1. Start
 
-A small preference memory can be stored as:
+2. Initialize AI chat interface (Ticko).
 
-{
+3. User Input: Accept user prompt (task request or wellness query).
 
-  "preferred_session_length": "25 minutes",
-  
-  "break_duration": "5 minutes",
-  
-  "subject_focus": ["Control Systems", "Power Electronics"],
-  
-  "motivation_style": "quotes"
+4. Process Prompt:
 
-}
+-> Parse and interpret user intent using LLM.
 
-This allows the assistant to deliver personalized plans and focus cycles automatically.
+-> Retrieve or modify relevant data (tasks/schedules).
 
-**✅ Expected Output (Example LLM Response)**
+5. Display Output:
 
-Study Planner & Focus Assistant Features
+-> Update task list dynamically.
 
-**📅 Daily Schedule Generator**
+-> Provide responses or motivational feedback.
 
-I. Creates dynamic study plans with balanced subjects.
+6. User Interaction:
 
-II. Adjusts workload according to available time.
+-> User can click checkboxes to mark tasks complete.
 
-**⏰ Focus Timer System**
+-> Chat continues with new requests.
 
-I. Uses short “Pomodoro” cycles (25 min work + 5 min break).
+7. End
 
-II. Alerts user when it’s time to rest or resume study.
+## Sample Prompts:
 
-**💬 Motivational Feedback**
+-> “Add task: Call mom at 6 PM (high priority).”
 
-I. Provides quotes, progress reports, and performance encouragement.
+-> “List today’s tasks.”
 
-II. Responds empathetically to user frustration or stress.
+-> “Give me a wellness tip.”
 
-**🧠 Adaptive Learning**
+-> “Remind me to take a walk at 5 PM.”
 
-I. Tracks subject completion trends.
+## Result:
 
-II. Adjusts future plans automatically (e.g., more focus on weak subjects).
+A functional prompt-based AI productivity assistant was developed successfully. The application can interpret natural language prompts, manage personal tasks, display schedules, and respond with productivity or wellness advice interactively.
 
-**Example Conversation:**
+## Output:
 
-**User:** “Plan my study time for tomorrow.”
+<img width="1917" height="912" alt="Screenshot 2025-11-06 111628" src="https://github.com/user-attachments/assets/8fbb3105-0b5b-43fd-9533-e86853bbe5de" />
 
-**Assistant:** “📘 Here’s your plan: 9–10 AM Machines, 10:15–11:15 Control Systems, 11:30–12:30 Power Electronics.”
+## Website Link:
 
-**User:** “Start focus mode for Control Systems.”
+https://lovable.dev/projects/d6c31f03-d72b-489a-87c2-2c884bc99284
 
-**Assistant:** “⏳ Focus mode started! You’ve got this — no distractions for 25 minutes!”
 
-**User:** “I need a motivational quote.”
+## Applications:
 
-**Assistant:** “💡 ‘The future depends on what you do today.’ — Mahatma Gandhi.”
+1. Personal productivity management
 
-**User:** “End session.”
+2. AI-based scheduling assistants
 
-**Assistant:** “Session ended. Great effort! Review your progress before bed for best retention.
+3. Educational task planners for students
 
+4. Wellness and motivation companion
 
-<img width="1024" height="1024" alt="qwert" src="https://github.com/user-attachments/assets/3795eed3-818a-490d-8382-8c13f25b27fa" />
+## Conclusion:
 
-**Result:**
-
-The experiment successfully demonstrated a Study Planner and Focus Assistant application using ChatGPT.
-
-Students were able to:
-
-Build an interactive, adaptive scheduling assistant.
-
-Apply prompt engineering to manage focus, motivation, and feedback.
-
-Understand how LLMs can support learning discipline through adaptive dialogue.
-
-Gain insights into human-AI collaboration for productivity enhancement.
-
-# Result: 
-The lab exercise resulted in the creation of a prototype concept for a personal assistant powered by large language models. Students were able to:
-
-Understand how to tailor LLM prompts to real-life applications.
-
-Foster creativity by designing features suited to their personal or academic lives.
-
-Learn prompt engineering techniques for optimal interaction with AI tools.
-
-Experience the versatility and utility of generative AI in solving everyday problems.
+The experiment successfully demonstrates how large language models can be integrated into personalized applications to improve productivity, enhance time management, and promote user engagement through prompt-driven interactions.
